@@ -4,9 +4,9 @@ metadata:
   name: noi-subscription
   namespace: {{ .Values.namespace }}
 spec:
-  channel: v1.7
+  channel: {{ .Values.subscription_channel }}
   installPlanApproval: Automatic
   name: noi
   source: {{ .Values.catalog_source }}
   sourceNamespace: openshift-marketplace
-  startingCSV: noi.v1.4.0
+  startingCSV: {{ .Values.subscription_startingCSV }}

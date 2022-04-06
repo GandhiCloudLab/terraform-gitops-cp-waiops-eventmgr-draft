@@ -109,4 +109,13 @@ variable "catalog_source_name" {
   type        = string
   description = "WAIOps Catalog Source"
 }
-
+variable "subscription_channel" {
+  type        = string
+  description = "WAIOps subscription channel"
+  default     = "v1.7"
+}
+variable "subscription_startingCSV" {
+  type        = string
+  description = "WAIOps subscription startingCSV"
+  default     = "noi.v1.4.0"
+}
