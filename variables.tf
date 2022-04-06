@@ -105,3 +105,8 @@ variable "storageClassLargeBlock" {
   default     = "ibmc-file-gold-gid"
 }
 
+variable "catalog_source_name" {
+  type        = string
+  description = "WAIOps Catalog Source"
+}
+

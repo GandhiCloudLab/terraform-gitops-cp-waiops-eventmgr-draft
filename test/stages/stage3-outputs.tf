@@ -5,11 +5,11 @@
 
      environment = {
        OUTPUT = jsonencode({
-         name        = module.cp-waiops-eventmgr.name
-         branch      = module.cp-waiops-eventmgr.branch
-         layer       = module.cp-waiops-eventmgr.layer
-         layer_dir   = module.cp-waiops-eventmgr.layer == "infrastructure" ? "1-infrastructure" : (module.cp4s.layer == "services" ? "2-services" : "3-applications")
-         type        = module.cp-waiops-eventmgr.type
+         name        = module.gitops_cp_waiops_eventmgr.name
+         branch      = module.gitops_cp_waiops_eventmgr.branch
+         layer       = module.gitops_cp_waiops_eventmgr.layer
+         layer_dir   = module.gitops_cp_waiops_eventmgr.layer == "infrastructure" ? "1-infrastructure" : (module.gitops_cp_waiops_eventmgr.layer == "services" ? "2-services" : "3-applications")
+         type        = module.gitops_cp_waiops_eventmgr.type
        })
      }
    }

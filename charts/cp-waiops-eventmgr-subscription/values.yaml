@@ -3,3 +3,4 @@
 # Declare variables to be passed into your templates.
 
 namespace: cp4waiops-emgr
+catalog_source: ibm-operator-catalog

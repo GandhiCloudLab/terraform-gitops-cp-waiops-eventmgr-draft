@@ -7,6 +7,6 @@ spec:
   channel: v1.7
   installPlanApproval: Automatic
   name: noi
-  source: noi-operator-catalog
+  source: {{ .Values.catalog_source }}
   sourceNamespace: openshift-marketplace
   startingCSV: noi.v1.4.0
